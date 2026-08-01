@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --fd-yellow: #ffc500;
+  --fd-bg: #0d0d0d;
+  --fd-card: #1c1c1e;
+  --fd-elevated: #2a2a2c;
+}
+
+html,
+body {
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+  font-family: "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.fd-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.fd-scrollbar::-webkit-scrollbar-track {
+  background: #141414;
+}
+.fd-scrollbar::-webkit-scrollbar-thumb {
+  background: #3a3a3c;
+  border-radius: 4px;
+}
+
+.fd-triangles {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpolygon points='0,0 70,0 0,70' fill='%23ffffff' opacity='0.06'/%3E%3Cpolygon points='140,140 70,140 140,70' fill='%23000000' opacity='0.18'/%3E%3Cpolygon points='140,0 140,40 100,0' fill='%23ffffff' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+@keyframes fd-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fd-fade-up {
+  animation: fd-fade-up 0.25s ease-out both;
+}
+
+@keyframes fd-slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.fd-slide-in {
+  animation: fd-slide-in 0.22s ease-out both;
+}
