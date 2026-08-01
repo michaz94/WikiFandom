@@ -1,0 +1,26 @@
+{
+  "name": "Wiki — Fandom × Obsidian × World Anvil",
+  "short_name": "Wiki",
+  "description": "Wiki personnel local-first : articles, catégories, wikitext, cartes, sauvegarde et mode hors-ligne.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
